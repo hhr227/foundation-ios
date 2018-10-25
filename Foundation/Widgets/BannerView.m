@@ -8,6 +8,7 @@
 
 #import "BannerView.h"
 #import "SmartImageView.h"
+#import "UIView+UI.h"
 
 @implementation BannerView {
     NSInteger currentPage;
