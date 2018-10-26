@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "TestService.h"
 
-@interface ViewController ()
+@interface ViewController () {
+    TestService *testService;
+}
 
 @end
 
@@ -16,7 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    testService = [TestService new];
+    [testService test];
 }
 
 

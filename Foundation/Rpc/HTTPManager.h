@@ -23,6 +23,6 @@ typedef enum {
 
 + (instancetype)sharedManager;
 
--(void) request:(HTTPMethod)httpMethod uri:(NSString *)uri param:(NSDictionary *)param success:(success) success failure:(failure) failure;
+-(void) request:(HTTPMethod)httpMethod uri:(NSString *)uri isJson:(BOOL)isJson param:(NSDictionary *)param success:(success) success failure:(failure) failure;
 
 @end

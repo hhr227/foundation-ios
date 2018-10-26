@@ -23,4 +23,10 @@ typedef void (^failure)(NSError *error);
 
 -(void) sendDelete:(NSString *) uri param:(NSDictionary *) param class:(Class) clz success:(success) success failure:(failure) failure;
 
+-(void) sendPostWithJson:(NSString *) uri param:(NSDictionary *) param class:(Class) clz success:(success) success failure:(failure) failure;
+
+-(void) sendPutWithJson:(NSString *) uri param:(NSDictionary *) param class:(Class) clz success:(success) success failure:(failure) failure;
+
+-(void) sendDeleteWithJson:(NSString *) uri param:(NSDictionary *) param class:(Class) clz success:(success) success failure:(failure) failure;
+
 @end

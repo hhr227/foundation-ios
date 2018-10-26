@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "HttpManager.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    HTTPManager *manager = [[HTTPManager sharedManager] initWithBaseURL:[NSURL URLWithString:@"http://47.99.68.184:8090"]];
+    if (manager == nil) {
+        NSLog(@"初始化baseUrl失败");
+    }
+    
     return YES;
 }
 

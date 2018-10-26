@@ -13,23 +13,36 @@
 @implementation BaseService
 
 -(void)sendGet:(NSString *)uri param:(NSDictionary *)param class:(Class) clz success:(success)success failure:(failure)failure {
-    [self request:GET uri:uri param:param class:clz success:success failure:failure];
+    [self request:GET uri:uri isJson:false param:param class:clz success:success failure:failure];
 }
 
 -(void)sendPost:(NSString *)uri param:(NSDictionary *)param class:(Class) clz success:(success)success failure:(failure)failure {
-    [self request:POST uri:uri param:param class:clz success:success failure:failure];
+    [self request:POST uri:uri isJson:false param:param class:clz success:success failure:failure];
 }
 
 -(void)sendDelete:(NSString *)uri param:(NSDictionary *)param class:(Class) clz success:(success)success failure:(failure)failure {
-    [self request:PUT uri:uri param:param class:clz success:success failure:failure];
+    [self request:PUT uri:uri isJson:false param:param class:clz success:success failure:failure];
 }
 
 -(void)sendPut:(NSString *)uri param:(NSDictionary *)param class:(Class) clz success:(success)success failure:(failure)failure {
-    [self request:DELETE uri:uri param:param class:clz success:success failure:failure];
+    [self request:DELETE uri:uri isJson:false param:param class:clz success:success failure:failure];
 }
 
--(void)request:(HTTPMethod) httpMethod uri:(NSString *)uri param:(NSDictionary *)param class:(Class) clz success:(success)success failure:(failure)failure {
-    [[HTTPManager sharedManager] request:httpMethod uri:uri param:param success:^(id response) {
+#pragma mark json请求参数
+-(void)sendPostWithJson:(NSString *)uri param:(NSDictionary *)param class:(Class)clz success:(success)success failure:(failure)failure {
+    [self request:POST uri:uri isJson:true param:param class:clz success:success failure:failure];
+}
+
+-(void)sendPutWithJson:(NSString *)uri param:(NSDictionary *)param class:(Class)clz success:(success)success failure:(failure)failure {
+    [self request:PUT uri:uri isJson:true param:param class:clz success:success failure:failure];
+}
+
+-(void)sendDeleteWithJson:(NSString *)uri param:(NSDictionary *)param class:(Class)clz success:(success)success failure:(failure)failure {
+    [self request:DELETE uri:uri isJson:true param:param class:clz success:success failure:failure];
+}
+
+-(void)request:(HTTPMethod) httpMethod uri:(NSString *)uri isJson:(BOOL)isJson param:(NSDictionary *)param class:(Class) clz success:(success)success failure:(failure)failure {
+    [[HTTPManager sharedManager] request:httpMethod uri:uri isJson:isJson param:param success:^(id response) {
         if (clz == nil || response == nil) {
             success(nil);
         } else {

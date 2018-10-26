@@ -26,16 +26,45 @@
     if (self) {
         self.requestSerializer.timeoutInterval = 5;
         self.requestSerializer.cachePolicy = NSURLRequestReloadIgnoringLocalCacheData;
+        self.securityPolicy.validatesDomainName = NO;
         self.securityPolicy.allowInvalidCertificates = YES;
     }
     return self;
 }
 
--(void)request:(HTTPMethod)httpMethod uri:(NSString *)uri param:(NSDictionary *)param success:(success)success failure:(failure)failure {
+-(void)request:(HTTPMethod)httpMethod uri:(NSString *)uri isJson:(BOOL)isJson param:(NSDictionary *)param success:(success)success failure:(failure)failure {
+    
+    if (isJson) {
+        self.requestSerializer = [AFJSONRequestSerializer serializer];
+    } else{
+        self.requestSerializer = [AFHTTPRequestSerializer serializer];
+    }
+    
     if (httpMethod == GET) {
         [self GET: [uri stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]] parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
             success(responseObject);
             
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            failure(error);
+        }];
+        
+    } else if (httpMethod == POST) {
+        [self POST:uri parameters:param progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            success(responseObject);
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            failure(error);
+        }];
+        
+    } else if (httpMethod == PUT) {
+        [self PUT:uri parameters:param success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            success(responseObject);
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            failure(error);
+        }];
+        
+    } else if (httpMethod == DELETE) {
+        [self DELETE:uri parameters:param success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            success(responseObject);
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
             failure(error);
         }];
