@@ -28,6 +28,7 @@
         self.requestSerializer.cachePolicy = NSURLRequestReloadIgnoringLocalCacheData;
         self.securityPolicy.validatesDomainName = NO;
         self.securityPolicy.allowInvalidCertificates = YES;
+        self.responseSerializer = [AFHTTPResponseSerializer serializer];
     }
     return self;
 }

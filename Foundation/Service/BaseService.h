@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "Foundation.h"
+#import "HTTPManager.h"
+#import <MJExtension.h>
 
 typedef void (^success)(id response);
 
@@ -28,5 +30,7 @@ typedef void (^failure)(NSError *error);
 -(void) sendPutWithJson:(NSString *) uri param:(NSDictionary *) param class:(Class) clz success:(success) success failure:(failure) failure;
 
 -(void) sendDeleteWithJson:(NSString *) uri param:(NSDictionary *) param class:(Class) clz success:(success) success failure:(failure) failure;
+
+-(void)request:(HTTPMethod) httpMethod uri:(NSString *)uri isJson:(BOOL)isJson param:(NSDictionary *)param class:(Class) clz success:(success)success failure:(failure)failure;
 
 @end

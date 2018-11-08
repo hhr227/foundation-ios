@@ -31,4 +31,14 @@
     return [entity.entityId isEqualToString:self.entityId];
 }
 
+#pragma mark 配置映射关系（如Code -> code）
++ (NSDictionary *)JSONInboundMappingDictionary {
+    return @{};
+}
+
+#pragma mark 配置映射关系（如code -> Code）
++ (NSDictionary *)JSONOutboundMappingDictionary {
+    return @{};
+}
+
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "TestService.h"
+#import "DigestEntity.h"
 
 @implementation TestService
 
@@ -16,7 +17,7 @@
     dic[@"DeviceId"] = @"5ad344d5fc55f7cb4cfb067ca9b5b8b7";
     dic[@"Timestamp"] = @"1536033573";
     
-    [self sendPostWithJson:@"http://47.99.68.184:8090/api/open/digest/get" param:dic class:nil success:^(id response) {
+    [self sendPostWithJson:@"http://47.99.68.184:8090/api/open/digest/get" param:dic class:[DigestEntity class] success:^(id response) {
         NSLog(@"%@", response);
     } failure:^(NSError *error) {
         NSLog(error);

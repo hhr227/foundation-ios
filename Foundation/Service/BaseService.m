@@ -7,8 +7,6 @@
 //
 
 #import "BaseService.h"
-#import "HTTPManager.h"
-#import <MJExtension.h>
 
 @implementation BaseService
 

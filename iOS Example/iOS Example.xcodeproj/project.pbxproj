@@ -23,12 +23,6 @@
 		A3258D4E2182164300D47474 /* LewPopupViewAnimationDrop.m in Sources */ = {isa = PBXBuildFile; fileRef = A3258D202182164300D47474 /* LewPopupViewAnimationDrop.m */; };
 		A3258D4F2182164300D47474 /* LewPopupViewAnimationSlide.m in Sources */ = {isa = PBXBuildFile; fileRef = A3258D212182164300D47474 /* LewPopupViewAnimationSlide.m */; };
 		A3258D502182164300D47474 /* LewPopupBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = A3258D242182164300D47474 /* LewPopupBackgroundView.m */; };
-		A3258D512182164300D47474 /* MCJSONPrimaryKeyTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = A3258D262182164300D47474 /* MCJSONPrimaryKeyTransformer.m */; };
-		A3258D522182164300D47474 /* RLMObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = A3258D272182164300D47474 /* RLMObject+JSON.m */; };
-		A3258D532182164300D47474 /* MCJSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = A3258D282182164300D47474 /* MCJSONValueTransformer.m */; };
-		A3258D542182164300D47474 /* RLMObject+Copying.m in Sources */ = {isa = PBXBuildFile; fileRef = A3258D292182164300D47474 /* RLMObject+Copying.m */; };
-		A3258D552182164300D47474 /* MCJSONNonNullStringTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = A3258D2A2182164300D47474 /* MCJSONNonNullStringTransformer.m */; };
-		A3258D562182164300D47474 /* MCJSONDateTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = A3258D2E2182164300D47474 /* MCJSONDateTransformer.m */; };
 		A3258D572182164300D47474 /* BaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = A3258D332182164300D47474 /* BaseService.m */; };
 		A3258D582182164300D47474 /* HTTPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A3258D372182164300D47474 /* HTTPManager.m */; };
 		A3258D592182164300D47474 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = A3258D3C2182164300D47474 /* UIView+Toast.m */; };
@@ -44,6 +38,13 @@
 		A37E24622181A35C00B6000A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A37E24612181A35C00B6000A /* main.m */; };
 		A37E246C2181A35D00B6000A /* iOS_ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A37E246B2181A35D00B6000A /* iOS_ExampleTests.m */; };
 		A37E24772181A35D00B6000A /* iOS_ExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A37E24762181A35D00B6000A /* iOS_ExampleUITests.m */; };
+		A3B779E12182AAD00001682F /* DigestEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B779E02182AAD00001682F /* DigestEntity.m */; };
+		A3B779EF2182B5130001682F /* MCJSONPrimaryKeyTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B779E32182B5130001682F /* MCJSONPrimaryKeyTransformer.m */; };
+		A3B779F02182B5130001682F /* RLMObject+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B779E42182B5130001682F /* RLMObject+JSON.m */; };
+		A3B779F12182B5130001682F /* MCJSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B779E52182B5130001682F /* MCJSONValueTransformer.m */; };
+		A3B779F22182B5130001682F /* RLMObject+Copying.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B779E62182B5130001682F /* RLMObject+Copying.m */; };
+		A3B779F32182B5130001682F /* MCJSONNonNullStringTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B779E72182B5130001682F /* MCJSONNonNullStringTransformer.m */; };
+		A3B779F42182B5130001682F /* MCJSONDateTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B779EB2182B5130001682F /* MCJSONDateTransformer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,18 +98,6 @@
 		A3258D222182164300D47474 /* LewPopupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LewPopupViewController.h; sourceTree = "<group>"; };
 		A3258D232182164300D47474 /* LewPopupViewAnimationFade.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LewPopupViewAnimationFade.h; sourceTree = "<group>"; };
 		A3258D242182164300D47474 /* LewPopupBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LewPopupBackgroundView.m; sourceTree = "<group>"; };
-		A3258D262182164300D47474 /* MCJSONPrimaryKeyTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCJSONPrimaryKeyTransformer.m; sourceTree = "<group>"; };
-		A3258D272182164300D47474 /* RLMObject+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RLMObject+JSON.m"; sourceTree = "<group>"; };
-		A3258D282182164300D47474 /* MCJSONValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCJSONValueTransformer.m; sourceTree = "<group>"; };
-		A3258D292182164300D47474 /* RLMObject+Copying.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RLMObject+Copying.m"; sourceTree = "<group>"; };
-		A3258D2A2182164300D47474 /* MCJSONNonNullStringTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCJSONNonNullStringTransformer.m; sourceTree = "<group>"; };
-		A3258D2B2182164300D47474 /* MCJSONDateTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCJSONDateTransformer.h; sourceTree = "<group>"; };
-		A3258D2C2182164300D47474 /* MCJSONPrimaryKeyTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCJSONPrimaryKeyTransformer.h; sourceTree = "<group>"; };
-		A3258D2D2182164300D47474 /* RLMObject+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RLMObject+JSON.h"; sourceTree = "<group>"; };
-		A3258D2E2182164300D47474 /* MCJSONDateTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCJSONDateTransformer.m; sourceTree = "<group>"; };
-		A3258D2F2182164300D47474 /* MCJSONNonNullStringTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCJSONNonNullStringTransformer.h; sourceTree = "<group>"; };
-		A3258D302182164300D47474 /* RLMObject+Copying.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RLMObject+Copying.h"; sourceTree = "<group>"; };
-		A3258D312182164300D47474 /* MCJSONValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCJSONValueTransformer.h; sourceTree = "<group>"; };
 		A3258D332182164300D47474 /* BaseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseService.m; sourceTree = "<group>"; };
 		A3258D342182164300D47474 /* BaseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseService.h; sourceTree = "<group>"; };
 		A3258D362182164300D47474 /* HTTPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPManager.h; sourceTree = "<group>"; };
@@ -139,6 +128,20 @@
 		A37E24722181A35D00B6000A /* iOS ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS ExampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A37E24762181A35D00B6000A /* iOS_ExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_ExampleUITests.m; sourceTree = "<group>"; };
 		A37E24782181A35D00B6000A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3B779DF2182AAD00001682F /* DigestEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DigestEntity.h; sourceTree = "<group>"; };
+		A3B779E02182AAD00001682F /* DigestEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DigestEntity.m; sourceTree = "<group>"; };
+		A3B779E32182B5130001682F /* MCJSONPrimaryKeyTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCJSONPrimaryKeyTransformer.m; sourceTree = "<group>"; };
+		A3B779E42182B5130001682F /* RLMObject+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RLMObject+JSON.m"; sourceTree = "<group>"; };
+		A3B779E52182B5130001682F /* MCJSONValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCJSONValueTransformer.m; sourceTree = "<group>"; };
+		A3B779E62182B5130001682F /* RLMObject+Copying.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RLMObject+Copying.m"; sourceTree = "<group>"; };
+		A3B779E72182B5130001682F /* MCJSONNonNullStringTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCJSONNonNullStringTransformer.m; sourceTree = "<group>"; };
+		A3B779E82182B5130001682F /* MCJSONDateTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCJSONDateTransformer.h; sourceTree = "<group>"; };
+		A3B779E92182B5130001682F /* MCJSONPrimaryKeyTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCJSONPrimaryKeyTransformer.h; sourceTree = "<group>"; };
+		A3B779EA2182B5130001682F /* RLMObject+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RLMObject+JSON.h"; sourceTree = "<group>"; };
+		A3B779EB2182B5130001682F /* MCJSONDateTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCJSONDateTransformer.m; sourceTree = "<group>"; };
+		A3B779EC2182B5130001682F /* MCJSONNonNullStringTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCJSONNonNullStringTransformer.h; sourceTree = "<group>"; };
+		A3B779ED2182B5130001682F /* RLMObject+Copying.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RLMObject+Copying.h"; sourceTree = "<group>"; };
+		A3B779EE2182B5130001682F /* MCJSONValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCJSONValueTransformer.h; sourceTree = "<group>"; };
 		DED46FDB19E41433EFC86D3D /* Pods-iOS Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS Example/Pods-iOS Example.release.xcconfig"; sourceTree = "<group>"; };
 		E64116AEA78B8ED544EF6BE5 /* Pods-iOS Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS Example/Pods-iOS Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -213,10 +216,10 @@
 		A3258D002182164300D47474 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				A3258D012182164300D47474 /* Paging.m */,
-				A3258D022182164300D47474 /* Entity.m */,
 				A3258D032182164300D47474 /* Entity.h */,
+				A3258D022182164300D47474 /* Entity.m */,
 				A3258D042182164300D47474 /* Paging.h */,
+				A3258D012182164300D47474 /* Paging.m */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -224,14 +227,14 @@
 		A3258D062182164300D47474 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				A3258D0B2182164300D47474 /* ViewUtils.h */,
 				A3258D072182164300D47474 /* ViewUtils.m */,
 				A3258D082182164300D47474 /* UIView+UI.h */,
-				A3258D092182164300D47474 /* StringUtils.h */,
-				A3258D0A2182164300D47474 /* TextUtils.m */,
-				A3258D0B2182164300D47474 /* ViewUtils.h */,
-				A3258D0C2182164300D47474 /* StringUtils.m */,
 				A3258D0D2182164300D47474 /* UIView+UI.m */,
+				A3258D092182164300D47474 /* StringUtils.h */,
+				A3258D0C2182164300D47474 /* StringUtils.m */,
 				A3258D0E2182164300D47474 /* TextUtils.h */,
+				A3258D0A2182164300D47474 /* TextUtils.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -239,12 +242,12 @@
 		A3258D0F2182164300D47474 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A3258D102182164300D47474 /* BaseAppDelegate.m */,
-				A3258D112182164300D47474 /* BaseViewController.m */,
-				A3258D122182164300D47474 /* RefreshListController.m */,
 				A3258D132182164300D47474 /* BaseAppDelegate.h */,
+				A3258D102182164300D47474 /* BaseAppDelegate.m */,
 				A3258D142182164300D47474 /* BaseViewController.h */,
+				A3258D112182164300D47474 /* BaseViewController.m */,
 				A3258D152182164300D47474 /* RefreshListController.h */,
+				A3258D122182164300D47474 /* RefreshListController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -252,8 +255,8 @@
 		A3258D162182164300D47474 /* External */ = {
 			isa = PBXGroup;
 			children = (
+				A3B779E22182B5130001682F /* Realm+JSON */,
 				A3258D172182164300D47474 /* PopupViewController */,
-				A3258D252182164300D47474 /* Realm+JSON */,
 			);
 			path = External;
 			sourceTree = "<group>";
@@ -278,30 +281,11 @@
 			path = PopupViewController;
 			sourceTree = "<group>";
 		};
-		A3258D252182164300D47474 /* Realm+JSON */ = {
-			isa = PBXGroup;
-			children = (
-				A3258D262182164300D47474 /* MCJSONPrimaryKeyTransformer.m */,
-				A3258D272182164300D47474 /* RLMObject+JSON.m */,
-				A3258D282182164300D47474 /* MCJSONValueTransformer.m */,
-				A3258D292182164300D47474 /* RLMObject+Copying.m */,
-				A3258D2A2182164300D47474 /* MCJSONNonNullStringTransformer.m */,
-				A3258D2B2182164300D47474 /* MCJSONDateTransformer.h */,
-				A3258D2C2182164300D47474 /* MCJSONPrimaryKeyTransformer.h */,
-				A3258D2D2182164300D47474 /* RLMObject+JSON.h */,
-				A3258D2E2182164300D47474 /* MCJSONDateTransformer.m */,
-				A3258D2F2182164300D47474 /* MCJSONNonNullStringTransformer.h */,
-				A3258D302182164300D47474 /* RLMObject+Copying.h */,
-				A3258D312182164300D47474 /* MCJSONValueTransformer.h */,
-			);
-			path = "Realm+JSON";
-			sourceTree = "<group>";
-		};
 		A3258D322182164300D47474 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				A3258D332182164300D47474 /* BaseService.m */,
 				A3258D342182164300D47474 /* BaseService.h */,
+				A3258D332182164300D47474 /* BaseService.m */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -318,12 +302,12 @@
 		A3258D382182164300D47474 /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
-				A3258D392182164300D47474 /* SmartImageView.h */,
 				A3258D3A2182164300D47474 /* Toast */,
-				A3258D3D2182164300D47474 /* BasePopView.h */,
-				A3258D3E2182164300D47474 /* BannerView.m */,
+				A3258D392182164300D47474 /* SmartImageView.h */,
 				A3258D3F2182164300D47474 /* SmartImageView.m */,
 				A3258D402182164300D47474 /* BannerView.h */,
+				A3258D3E2182164300D47474 /* BannerView.m */,
+				A3258D3D2182164300D47474 /* BasePopView.h */,
 				A3258D412182164300D47474 /* BasePopView.m */,
 			);
 			path = Widgets;
@@ -368,6 +352,8 @@
 				A37E24532181A35B00B6000A /* AppDelegate.m */,
 				A3258D5D2182167300D47474 /* TestService.h */,
 				A3258D5E2182167300D47474 /* TestService.m */,
+				A3B779DF2182AAD00001682F /* DigestEntity.h */,
+				A3B779E02182AAD00001682F /* DigestEntity.m */,
 				A37E24552181A35B00B6000A /* ViewController.h */,
 				A37E24562181A35B00B6000A /* ViewController.m */,
 				A37E24582181A35B00B6000A /* Main.storyboard */,
@@ -395,6 +381,25 @@
 				A37E24782181A35D00B6000A /* Info.plist */,
 			);
 			path = "iOS ExampleUITests";
+			sourceTree = "<group>";
+		};
+		A3B779E22182B5130001682F /* Realm+JSON */ = {
+			isa = PBXGroup;
+			children = (
+				A3B779E32182B5130001682F /* MCJSONPrimaryKeyTransformer.m */,
+				A3B779E42182B5130001682F /* RLMObject+JSON.m */,
+				A3B779E52182B5130001682F /* MCJSONValueTransformer.m */,
+				A3B779E62182B5130001682F /* RLMObject+Copying.m */,
+				A3B779E72182B5130001682F /* MCJSONNonNullStringTransformer.m */,
+				A3B779E82182B5130001682F /* MCJSONDateTransformer.h */,
+				A3B779E92182B5130001682F /* MCJSONPrimaryKeyTransformer.h */,
+				A3B779EA2182B5130001682F /* RLMObject+JSON.h */,
+				A3B779EB2182B5130001682F /* MCJSONDateTransformer.m */,
+				A3B779EC2182B5130001682F /* MCJSONNonNullStringTransformer.h */,
+				A3B779ED2182B5130001682F /* RLMObject+Copying.h */,
+				A3B779EE2182B5130001682F /* MCJSONValueTransformer.h */,
+			);
+			path = "Realm+JSON";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -578,34 +583,35 @@
 			files = (
 				A3258D592182164300D47474 /* UIView+Toast.m in Sources */,
 				A3258D5F2182167300D47474 /* TestService.m in Sources */,
+				A3B779F02182B5130001682F /* RLMObject+JSON.m in Sources */,
 				A3258D462182164300D47474 /* StringUtils.m in Sources */,
 				A3258D4A2182164300D47474 /* RefreshListController.m in Sources */,
 				A3258D4E2182164300D47474 /* LewPopupViewAnimationDrop.m in Sources */,
 				A3258D442182164300D47474 /* ViewUtils.m in Sources */,
+				A3B779E12182AAD00001682F /* DigestEntity.m in Sources */,
+				A3B779EF2182B5130001682F /* MCJSONPrimaryKeyTransformer.m in Sources */,
 				A3258D5C2182164300D47474 /* BasePopView.m in Sources */,
-				A3258D542182164300D47474 /* RLMObject+Copying.m in Sources */,
-				A3258D512182164300D47474 /* MCJSONPrimaryKeyTransformer.m in Sources */,
 				A3258D492182164300D47474 /* BaseViewController.m in Sources */,
 				A3258D5A2182164300D47474 /* BannerView.m in Sources */,
 				A3258D4D2182164300D47474 /* LewPopupViewAnimationSpring.m in Sources */,
+				A3B779F42182B5130001682F /* MCJSONDateTransformer.m in Sources */,
 				A3258D5B2182164300D47474 /* SmartImageView.m in Sources */,
 				A3258D4F2182164300D47474 /* LewPopupViewAnimationSlide.m in Sources */,
 				A3258D4B2182164300D47474 /* LewPopupViewAnimationFade.m in Sources */,
 				A3258D502182164300D47474 /* LewPopupBackgroundView.m in Sources */,
+				A3B779F32182B5130001682F /* MCJSONNonNullStringTransformer.m in Sources */,
 				A3258D452182164300D47474 /* TextUtils.m in Sources */,
 				A3258D482182164300D47474 /* BaseAppDelegate.m in Sources */,
 				A3258D582182164300D47474 /* HTTPManager.m in Sources */,
+				A3B779F22182B5130001682F /* RLMObject+Copying.m in Sources */,
 				A3258D432182164300D47474 /* Entity.m in Sources */,
+				A3B779F12182B5130001682F /* MCJSONValueTransformer.m in Sources */,
 				A37E24572181A35B00B6000A /* ViewController.m in Sources */,
 				A3258D422182164300D47474 /* Paging.m in Sources */,
 				A37E24622181A35C00B6000A /* main.m in Sources */,
 				A3258D4C2182164300D47474 /* UIViewController+LewPopupViewController.m in Sources */,
 				A3258D472182164300D47474 /* UIView+UI.m in Sources */,
 				A3258D572182164300D47474 /* BaseService.m in Sources */,
-				A3258D552182164300D47474 /* MCJSONNonNullStringTransformer.m in Sources */,
-				A3258D522182164300D47474 /* RLMObject+JSON.m in Sources */,
-				A3258D562182164300D47474 /* MCJSONDateTransformer.m in Sources */,
-				A3258D532182164300D47474 /* MCJSONValueTransformer.m in Sources */,
 				A37E24542181A35B00B6000A /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
