@@ -51,14 +51,43 @@
                     [records addObject:entity];
                 }
                 success(records);
-            } else {
+                
+            } else if ([response isKindOfClass:[NSData class]]) {
+                NSString *respString = [[NSString alloc] initWithData:response encoding:NSUTF8StringEncoding];
+                NSDictionary *dic = [self dictionaryWithJsonString:respString];
+                if (dic) {
+                    id entity = [RLMObject initWithJSONDictionary:dic andClass:clz];
+                    success(entity);
+                } else {
+                    success(respString);
+                }
+                
+            } else if ([response isKindOfClass:[NSDictionary class]]) {
                 id entity = [RLMObject initWithJSONDictionary:response andClass:clz];
                 success(entity);
+                
+            } else {
+                success(response);
             }
         }
     } failure:^(NSError *error) {
         failure(error);
     }];
+}
+
+-(NSDictionary *)dictionaryWithJsonString:(NSString *)jsonString {
+    if (jsonString == nil) {
+        return nil;
+    }
+    
+    NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+    NSError *err;
+    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers error:&err];
+    if (err) {
+        NSLog(@"json解析失败：%@", err);
+        return nil;
+    }
+    return dic;
 }
 
 #pragma mark 统一异常处理
